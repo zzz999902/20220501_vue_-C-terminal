@@ -1,4 +1,4 @@
-# vue_user  vue2.0 + vant 2 + postcss-px2rem适配375尺寸的移动端
+#  vue2.0 + vant 2 + postcss-px2rem适配375尺寸的移动端
 
 ## Project setup
 ```
