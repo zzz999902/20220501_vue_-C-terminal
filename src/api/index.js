@@ -10,28 +10,28 @@ const instance = Axios.create({
 });
 
 const likeSearch = (value) => instance.get(
-  URLs.likeSearch,
-  { params: { likeValue: value } },
+  URLs.likeSearch, { params: { likeValue: value } },
 );
+// 侧边栏
 const getSideList = (value) => instance.get(
-  URLs.getSide,
-  { params: { type: value } },
+  URLs.getSide, { params: { type: value } },
 );
+// 侧边栏的数据
 const getGoodsList = (value, page, size, sort = 'all') => instance.get(
-  URLs.getGoodsList,
-  {
+  URLs.getGoodsList, {
     params: {
-      type: value, page, size, sort,
+      type: value,
+      page,
+      size,
+      sort,
     },
   },
 );
 const Search = (value, page, size) => instance.get(
-  URLs.search,
-  { params: { type: value, page, size } },
+  URLs.search, { params: { type: value, page, size } },
 );
 const getGoodsByIds = (value) => instance.get(
-  URLs.getGoodsByIds,
-  { params: { value } },
+  URLs.getGoodsByIds, { params: { value } },
 );
 export default {
   likeSearch,
